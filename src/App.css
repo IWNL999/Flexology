@@ -1,0 +1,372 @@
+/* Header */
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.36);
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+.project-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-button {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  border-right: 1px solid rgba(0, 0, 0, 0.36);
+  height: 43px;
+  width: 100px;
+  border-radius: 0;
+  font-weight: 400;
+}
+
+.trial-button {
+  color: #0055ff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+h1, h2{
+  margin: 0;
+}
+
+
+
+
+
+/* Preview */
+.preview {
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: 112px;
+}
+
+.preview-container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.preview-left {
+  max-width: 520px;
+}
+
+.generate-virus {
+  font-size: 52px;
+  font-weight: 700;
+  text-align: left;
+  color: black;
+  line-height: 1.2;
+}
+
+.generate-virus-2 {
+  margin-top: 20px;
+  width: 420px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0px;
+  color: rgba(0, 0, 0, 0.75);
+  text-align: left;
+}
+
+.preview-generate {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 240px;
+  height: 60px;
+}
+
+.preview-card {
+  width: 323px;
+  height: 480px;
+  border: 1px solid rgba(0, 0, 0, 0.36);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+.preview-icon {
+  font-size: 64px;
+  opacity: 0.5;
+}
+
+.preview-text {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+
+/* Cards */
+.cards{
+  padding: 0 100px;
+}
+
+.cards-container {
+  max-width: 1342px;
+  border: 1px solid rgba(0, 0, 0, 0.36);
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap; /* ✅ добавлено */
+  justify-content: center; /* центрируем карточки */
+  align-items: center;
+  gap: 30px; /* ✅ расстояние между карточками */
+  margin: 117px auto;
+  padding: 51px;
+}
+
+.card-explanation{
+  margin: 0;
+  width: 390px;
+  height: 250px;
+  border: 1px solid rgba(0, 0, 0);
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-explanation>p{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  color: rgb(40, 40, 40);
+}
+
+.card-explanation>h2{
+  margin: 10px;
+  text-align: center;
+}
+
+
+
+
+
+
+/* generate */
+
+.generate{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.generate>h1{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.generate>p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(64, 64, 64);
+}
+
+.generate-container {
+  max-width: 850px;
+  border: 1px solid rgba(0, 0, 0, 0.36);
+  border-radius: 8px;
+  align-items: center;
+  padding: 27px 32px;
+  margin-top: 51px;
+}
+
+.generate-input {
+  width: 100%;
+  height: 112px;
+  border: 1px solid rgba(0, 0, 0, 0.36);
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 22px;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgb(64, 64, 64);
+  resize: none; /* запрет на ручное изменение размера */
+  outline: none;
+  background-color: #fff;
+  display: block;
+}
+
+.generate-container>button{
+  margin: 27px auto 0px;
+  max-width: 786px;
+  height: 52px;
+  width: 100%;
+  padding: 0;
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
+/* Tariffs */
+.tariffs{
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.card-tariff{
+  width: 390px;
+  height: 352px;
+  border: 1px solid rgb(149, 149, 149);
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 16px;
+}
+
+.tariffs-container {
+  display: flex;
+  gap: 35px; /* расстояние между карточками */
+  margin: 40px auto 100px auto;
+  flex-wrap: wrap; /* ✅ добавлено */
+  justify-content: center; /* центрируем карточки */
+}
+
+.tariffs>h1{
+  margin: 0 auto;
+}
+
+.tariffs>p{
+  margin: 20px auto 0;
+}
+
+.card-tariff>h2{
+  font-size: 24px;
+  margin: 0;
+  color: rgb(58, 53, 53);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+.price{
+  display: flex;
+  font-size: 36px;
+  margin-top: 14px;
+  margin-left: 7px;
+}
+
+.price>h3{
+  margin:0;
+  color: rgb(58, 53, 53);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0px;
+}
+
+.price>p{
+  margin: 0;
+  font-size: 24px;
+  margin-top: 8px;
+  color: rgb(149, 149, 149);
+}
+
+.advantage{
+  display: flex;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 7px;
+}
+
+.advantage>img{
+  width: 32px;
+  height: 32px;
+}
+
+.advantage>p{
+  margin: 0;
+  margin-left: 14px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: rgb(58, 53, 53);
+}
+
+.adv-2{
+  margin-top: 16px;
+}
+
+.card-tariff>button{
+  margin: 12px auto 0 auto;
+  width: 324px;
+  height: 48px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0px;
+  color: rgb(58, 53, 53);
+  background: rgba(66, 175, 168, 0.32);
+}
+
+.card-tariff-2>button{
+  background: rgb(0, 255, 237);
+}

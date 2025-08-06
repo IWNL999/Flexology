@@ -1,0 +1,29 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 1);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button{
+  background-color: rgba(0, 255, 237, 0.32);
+  border-radius: 8px;
+  box-shadow: none;
+  border: none;
+  height: 38px;
+  width: 241px;
+  color: rgb(16, 69, 237);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0px;
+  padding: 0;
+}
