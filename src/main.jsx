@@ -6,6 +6,7 @@ import Preview from './Preview.jsx'
 import Cards from './Cards.jsx'
 import Generate from './Generate.jsx'
 import Tariffs from './Tariffs.jsx'
+import Footer from './Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,5 +15,6 @@ createRoot(document.getElementById('root')).render(
     <Cards />
     <Generate />
     <Tariffs />
+    <Footer />
   </StrictMode>,
 )
