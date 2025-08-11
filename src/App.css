@@ -1,3 +1,5 @@
+
+
 /* Header */
 .header {
   position: absolute;
@@ -5,7 +7,7 @@
   left: 0;
   top: 0;
   box-sizing: border-box;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.36);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .header-container {
@@ -23,6 +25,7 @@
 .project-name {
   font-size: 24px;
   margin: 0;
+  color: var(--color-text);
 }
 
 .header-right {
@@ -39,15 +42,19 @@
   background: none;
   color: inherit;
   cursor: pointer;
-  border-right: 1px solid rgba(0, 0, 0, 0.36);
+  border-right: 1px solid var(--color-border);
   height: 43px;
   width: 100px;
   border-radius: 0;
   font-weight: 400;
+  color: var(--color-text);
+}
+
+.login-button:hover{
+  background-color: var(--color-bg);
 }
 
 .trial-button {
-  color: #0055ff;
   font-weight: bold;
   border: none;
   border-radius: 8px;
@@ -55,9 +62,19 @@
   cursor: pointer;
 }
 
-h1, h2{
+h1, h2 {
   margin: 0;
+  color: var(--color-text-primary);
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -71,6 +88,7 @@ h1, h2{
   justify-content: center;
   box-sizing: border-box;
   margin-top: 112px;
+  background-color: var(--color-bg);
 }
 
 .preview-container {
@@ -91,7 +109,7 @@ h1, h2{
   font-size: 52px;
   font-weight: 700;
   text-align: left;
-  color: black;
+  color: var(--color-text);
   line-height: 1.2;
 }
 
@@ -102,7 +120,7 @@ h1, h2{
   font-weight: 400;
   line-height: 27px;
   letter-spacing: 0px;
-  color: rgba(0, 0, 0, 0.75);
+  color: var(--color-text-secondary);
   text-align: left;
 }
 
@@ -113,29 +131,34 @@ h1, h2{
   cursor: pointer;
   width: 240px;
   height: 60px;
+  color: var(--color-accent);
 }
 
 .preview-card {
   width: 323px;
   height: 480px;
-  border: 1px solid rgba(0, 0, 0, 0.36);
+  border: 1px solid var(--color-border);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: gray;
+  color: var(--color-gray);
 }
 
 .preview-icon {
   font-size: 64px;
   opacity: 0.5;
+  color: var(--color-text);
 }
 
 .preview-text {
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--color-text-muted);
 }
+
+
+
 
 
 
@@ -145,49 +168,53 @@ h1, h2{
 
 
 /* Cards */
-.cards{
+.cards {
   padding: 0 100px;
+  background-color: var(--color-bg);
 }
 
 .cards-container {
   max-width: 1342px;
-  border: 1px solid rgba(0, 0, 0, 0.36);
+  border: 1px solid var(--color-border);
   border-radius: 20px;
   box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap; /* ✅ добавлено */
-  justify-content: center; /* центрируем карточки */
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  gap: 30px; /* ✅ расстояние между карточками */
+  gap: 30px;
   margin: 117px auto;
   padding: 51px;
+  background-color: var(--color-bg);
 }
 
-.card-explanation{
+.card-explanation {
   margin: 0;
   width: 390px;
   height: 250px;
-  border: 1px solid rgba(0, 0, 0);
+  border: 1px solid var(--color-border-light);
   border-radius: 8px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-bg-cards);
 }
 
-.card-explanation>p{
+.card-explanation > p {
   margin: 0;
   font-size: 20px;
   font-weight: 400;
   line-height: 22px;
   text-align: center;
-  color: rgb(40, 40, 40);
+  color: var(--color-text-dark);
 }
 
-.card-explanation>h2{
+.card-explanation > h2 {
   margin: 10px;
   text-align: center;
+  color: var(--color-text-primary);
 }
 
 
@@ -195,61 +222,84 @@ h1, h2{
 
 
 
-/* generate */
 
-.generate{
+
+
+
+
+
+
+
+
+
+/* Generate */
+.generate {
   max-width: 850px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 100px;
 }
 
-.generate>h1{
+.generate > h1 {
   font-size: 36px;
   font-weight: 700;
   line-height: 44px;
+  color: var(--color-text-primary);
 }
 
-.generate>p{
+.generate > p {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  color: rgb(64, 64, 64);
+  color: var(--color-text-normal);
 }
 
 .generate-container {
   max-width: 850px;
-  border: 1px solid rgba(0, 0, 0, 0.36);
+  border: 1px solid var(--color-border-light);
   border-radius: 8px;
   align-items: center;
   padding: 27px 32px;
   margin-top: 51px;
+  background-color: var(--color-bg-cards);
 }
 
 .generate-input {
   width: 100%;
   height: 112px;
-  border: 1px solid rgba(0, 0, 0, 0.36);
+  border: 1px solid var(--color-border);
   border-radius: 8px;
   box-sizing: border-box;
   padding: 22px;
   font-size: 16px;
   line-height: 19px;
-  color: rgb(64, 64, 64);
-  resize: none; /* запрет на ручное изменение размера */
+  font-weight: 400;
+  color: var(--color-text-normal);
+  resize: none;
   outline: none;
-  background-color: #fff;
+  background-color: var(--color-bg-input);
   display: block;
 }
 
-.generate-container>button{
+.generate-container > button {
   margin: 27px auto 0px;
   max-width: 786px;
   height: 52px;
   width: 100%;
   padding: 0;
   font-size: 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -259,99 +309,101 @@ h1, h2{
 
 
 /* Tariffs */
-.tariffs{
+.tariffs {
   max-width: 1440px;
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  background-color: var(--color-bg);
 }
 
-.card-tariff{
+.card-tariff {
   width: 390px;
   height: 352px;
-  border: 1px solid rgb(149, 149, 149);
+  border: 1px solid var(--color-border-light);
   border-radius: 8px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: start;
   padding: 16px;
+  background-color: var(--color-bg-cards);
 }
 
 .tariffs-container {
   display: flex;
-  gap: 35px; /* расстояние между карточками */
+  gap: 35px;
   margin: 40px auto 100px auto;
-  flex-wrap: wrap; /* ✅ добавлено */
-  justify-content: center; /* центрируем карточки */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.tariffs>h1{
+.tariffs > h1 {
   margin: 0 auto;
+  color: var(--color-text-primary);
 }
 
-.tariffs>p{
+.tariffs > p {
   margin: 20px auto 0;
+  color: var(--color-text-normal);
 }
 
-.card-tariff>h2{
+.card-tariff > h2 {
   font-size: 24px;
   margin: 0;
-  color: rgb(58, 53, 53);
-  font-size: 24px;
+  color: var(--color-text-primary);
   font-weight: 700;
   line-height: 29px;
   margin-top: 7px;
   margin-left: 7px;
 }
 
-.price{
+.price {
   display: flex;
   font-size: 36px;
   margin-top: 14px;
   margin-left: 7px;
 }
 
-.price>h3{
-  margin:0;
-  color: rgb(58, 53, 53);
-  font-size: 36px;
+.price > h3 {
+  margin: 0;
+  color: var(--color-text-primary);
   font-weight: 400;
   line-height: 44px;
   letter-spacing: 0px;
 }
 
-.price>p{
+.price > p {
   margin: 0;
   font-size: 24px;
   margin-top: 8px;
-  color: rgb(149, 149, 149);
+  color: var(--color-text-normal);
 }
 
-.advantage{
+.advantage {
   display: flex;
   margin: 0;
   margin-top: 30px;
   margin-left: 7px;
 }
 
-.advantage>img{
+.advantage > img {
   width: 32px;
   height: 32px;
 }
 
-.advantage>p{
+.advantage > p {
   margin: 0;
   margin-left: 14px;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0px;
-  color: rgb(58, 53, 53);
+  color: var(--color-text-primary);
 }
 
-.adv-2{
+.adv-2 {
   margin-top: 16px;
 }
 
@@ -363,12 +415,13 @@ h1, h2{
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0px;
-  color: rgb(58, 53, 53);
-  background: rgba(66, 175, 168, 0.32);
+  color: var(--color-text-primary);
+  background: var(--color-button-accent-inactive);
 }
 
 .card-tariff-2>button{
-  background: rgb(0, 255, 237);
+  background: var(--color-button-accent);
+  cursor: pointer;
 }
 
 
@@ -380,11 +433,12 @@ h1, h2{
 
 
 
-/* footer */
+/* Footer */
 .footer {
   width: 100%;
   box-sizing: border-box;
-  border-top: 1px solid rgba(0, 0, 0, 0.36); 
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-bg);
 }
 
 .footer-container {
@@ -418,10 +472,11 @@ h1, h2{
 .footer-column h4 {
   margin-bottom: 8px;
   font-size: 16px;
+  color: var(--color-text-primary);
 }
 
 .footer-column p {
   margin: 0;
-  color: #444;
+  color: var(--color-footer-text);
   font-size: 14px;
 }

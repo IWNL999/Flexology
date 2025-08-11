@@ -7,14 +7,18 @@ import Cards from './Cards.jsx'
 import Generate from './Generate.jsx'
 import Tariffs from './Tariffs.jsx'
 import Footer from './Footer.jsx'
+import { ThemeProvider } from './ThemeContext';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Header />
-    <Preview />
-    <Cards />
-    <Generate />
-    <Tariffs />
-    <Footer />
-  </StrictMode>,
+    <ThemeProvider>
+      <Header />
+      <Preview />
+      <Cards />
+      <Generate />
+      <Tariffs />
+      <Footer />
+      </ThemeProvider>,
+  </StrictMode>
+  
 )
