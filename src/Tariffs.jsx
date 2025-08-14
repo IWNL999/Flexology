@@ -22,10 +22,13 @@ function Tariffs() {
                 <img src={check} alt="check" />
                 <p>Базовые шаблоны</p>
               </div>
-              <button>Текущий план</button>
+              <button disabled>Текущий план</button>
           </div>
 
           <div className="card-tariff card-tariff-2">
+            <div className="popular-badge">
+              <p>Популярный</p>  
+            </div>
               <h2>PRO</h2>
               <div className="price">
                 <h3>$9</h3>

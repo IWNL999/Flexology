@@ -230,8 +230,6 @@ h1, h2 {
 
 
 
-
-
 /* Generate */
 .generate {
   max-width: 850px;
@@ -329,6 +327,7 @@ h1, h2 {
   align-items: start;
   padding: 16px;
   background-color: var(--color-bg-cards);
+  position: relative;
 }
 
 .tariffs-container {
@@ -422,6 +421,44 @@ h1, h2 {
 .card-tariff-2>button{
   background: var(--color-button-accent);
   cursor: pointer;
+}
+
+.card-tariff-2>button:active {
+  background-color: rgba(0, 217, 255, 0.9);
+  transform: scale(0.99);
+}
+
+.dark-theme .card-tariff-2>button:active {
+  background-color: var(--color-button-active);
+  transform: scale(0.99);
+}
+
+.card-tariff > button[disabled] {
+  cursor: default;
+}
+
+.card-tariff > button[disabled]:active {
+  transform: none;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px; 
+  left: 50%;
+  width: 124px;
+  height: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  transform: translateX(-50%); 
+  background-color: var(--color-button-accent); 
+  color: var(--color-text-primary); 
+  border-radius: 16px; 
+  text-align: center;
+}
+
+.popular-badge>p{
+  margin: 0;
+  margin-top: -2px;
 }
 
 

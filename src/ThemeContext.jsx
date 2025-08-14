@@ -13,15 +13,12 @@ export const useTheme = () => {
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('light');
-
   // При монтировании проверяем сохранённую тему или системные настройки
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
     const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
     setTheme(initialTheme);
-
     document.documentElement.classList.toggle('dark-theme', initialTheme === 'dark');
   }, []);
 
