@@ -21,6 +21,7 @@
   --color-accent: #ffffff; /* текст кнопок */
   --color-button-accent: rgb(38, 137, 235); /* Дефолтная кнопка */
   --color-button-accent-inactive: rgb(38, 137, 235, 0.7); /* Полупрозрачная кнопка */
+  --color-button-active: rgb(38, 137, 235, 0.8); /* цвет при активации */
   --color-bg-input: rgba(255, 255, 255, 0.32); /* Фон инпута */
   --color-footer-text: #444; /* Текст футера */
 } 
@@ -40,6 +41,7 @@
   --color-accent: #ffffff; /* текст кнопок */
   --color-button-accent: rgba(89, 98, 115, 1); /* Яркая кнопка */
   --color-button-accent-inactive: rgba(67, 72, 93, 1); /* Полупрозрачная кнопка */
+  --color-button-active: rgb(89, 98, 115, 0.8); /* цвет при активации */
   --color-bg-input: rgba(67, 72, 93, 1); /* Фон инпута */
   --color-footer-text: #aaa; /* Текст футера */
 }
