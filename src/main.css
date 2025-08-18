@@ -14,14 +14,13 @@
   --color-text-normal: #404040; /* Параграфы */
   --color-text-dark: #282828; /* Текст в карточках */
   --color-text-muted: rgba(0, 0, 0, 0.4); /* Подсказки */
-  --color-gray: gray; /* Серый текст/иконки */
+  --color-gray: gray; /* Серый текст */
+  --color-links: rgb(38, 137, 235);
   --color-border: rgba(0, 0, 0, 0.36); /* Основные обводки */
   --color-border-light: #959595; /* Обводки карточек */
-  --color-accent: #0055ff; /* Синий акцент (ссылки, кнопки) */
-  --color-button-accent: rgb(0, 255, 237); /* Яркая кнопка */
-  --color-button-accent-light: rgba(0, 255, 237, 0.32); /* Дефолтная кнопка */
-  --color-button-accent-inactive: rgba(66, 175, 168, 0.32); /* Полупрозрачная кнопка */
-  --color-button-active: rgba(0, 255, 237, 0.7);
+  --color-accent: #ffffff; /* текст кнопок */
+  --color-button-accent: rgb(38, 137, 235); /* Дефолтная кнопка */
+  --color-button-accent-inactive: rgb(38, 137, 235, 0.7); /* Полупрозрачная кнопка */
   --color-bg-input: rgba(255, 255, 255, 0.32); /* Фон инпута */
   --color-footer-text: #444; /* Текст футера */
 } 
@@ -35,14 +34,12 @@
   --color-text-normal: rgba(149, 149, 149, 1);
   --color-text-dark: #d0d0d0; /* Текст в карточках */
   --color-text-muted: rgba(255, 255, 255, 0.4); /* Подсказки */
-  --color-gray: #999; /* Серый текст/иконки */
+  --color-gray: #999; /* Серый текст */
   --color-border: rgba(255, 255, 255, 0.2); /* Основные обводки */
   --color-border-light: rgba(38, 38, 38, 1); /* Обводки карточек */
-  --color-accent: #ffffff; /* Синий акцент (ссылки, кнопки) */
+  --color-accent: #ffffff; /* текст кнопок */
   --color-button-accent: rgba(89, 98, 115, 1); /* Яркая кнопка */
-  --color-button-accent-light: rgba(89, 98, 115, 1); /* Дефолтная кнопка */
   --color-button-accent-inactive: rgba(67, 72, 93, 1); /* Полупрозрачная кнопка */
-  --color-button-active: rgba(120, 120, 120, 0.7);
   --color-bg-input: rgba(67, 72, 93, 1); /* Фон инпута */
   --color-footer-text: #aaa; /* Текст футера */
 }
@@ -52,7 +49,7 @@ body {
 }
 
 button{
-  background-color: var(--color-button-accent-light);
+  background-color: var(--color-button-accent);
   border-radius: 8px;
   box-shadow: none;
   border: none;
@@ -62,7 +59,7 @@ button{
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
-  letter-spacing: 0px;
+  letter-spacing: 0.7px;
   padding: 0;
   cursor: pointer;
 }

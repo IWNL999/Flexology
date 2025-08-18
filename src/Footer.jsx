@@ -16,7 +16,7 @@ function Footer() {
         </div>
         <div className="footer-column">
           <h4>Соцсети</h4>
-          <p>Instagram</p>
+          <p>VK</p>
           <p>Telegram</p>
         </div>
       </div>
