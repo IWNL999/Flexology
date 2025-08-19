@@ -1,21 +1,26 @@
+// Header.jsx
 import './App.css';
 import { useTheme } from './ThemeContext';
 import { useState } from 'react';
+import Login from './Login';
+import Registration from './Registration';
 
 function Header() {
   const { theme, toggleTheme } = useTheme();
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isRegisterOpen, setIsRegisterOpen] = useState(false);
 
   const isChecked = theme === 'dark';
 
   return (
     <>
+      {/* Основной хедер */}
       <div className="header">
         <div className="header-container">
           <p className="project-name">Flexology</p>
 
           <div className="header-right">
-            <button className="login-button" onClick={() => setIsModalOpen(true)}>
+            <button className="login-button" onClick={() => setIsLoginOpen(true)}>
               Войти
             </button>
             <button className="trial-button">Попробовать бесплатно</button>
@@ -47,26 +52,23 @@ function Header() {
         </div>
       </div>
 
-      {/* Модальное окно */}
-      {isModalOpen && (
-        <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
-          <div className="modal" onClick={(e) => e.stopPropagation()}>
-            <form className="form">
-              <p className="form-title">Войдите в свой аккаунт</p>
-              <div className="input-container">
-                <input placeholder="Enter email" type="email" />
-              </div>
-              <div className="input-container">
-                <input placeholder="Enter password" type="password" />
-              </div>
-              <button className="submit" type="submit">Войти</button>
-              <p className="signup-link">
-                No account? <a href="">Sign up</a>
-              </p>
-            </form>
-          </div>
-        </div>
-      )}
+      {/* Модальные окна */}
+      <Login
+        isOpen={isLoginOpen}
+        onClose={() => setIsLoginOpen(false)}
+        onSwitchToRegister={() => {
+          setIsLoginOpen(false);
+          setIsRegisterOpen(true);
+        }}
+      />
+      <Registration
+        isOpen={isRegisterOpen}
+        onClose={() => setIsRegisterOpen(false)}
+        onSwitchToLogin={() => {
+          setIsRegisterOpen(false);
+          setIsLoginOpen(true);
+        }}
+      />
     </>
   );
 }
