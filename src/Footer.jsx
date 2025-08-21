@@ -3,7 +3,7 @@ import './App.css'
 function Footer() {
   return (
     <div className="footer">
-      <div className="footer-container bottom-footer">
+      <div className="footer-container">
         <div className="footer-column">
           <h4>О нас</h4>
           <p>Команда</p>

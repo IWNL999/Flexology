@@ -26,6 +26,10 @@
   --color-footer-text: #444; /* Текст футера */
 } 
 
+* {
+  box-sizing: border-box;
+}
+
 .dark-theme {
   --color-bg: rgba(38, 38, 38, 1);
   --color-bg-cards: rgba(39, 44, 63, 1); /* Фон карточек */
