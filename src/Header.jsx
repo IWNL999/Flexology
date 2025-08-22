@@ -4,6 +4,7 @@ import { useTheme } from './ThemeContext';
 import { useState } from 'react';
 import Login from './Login';
 import Registration from './Registration';
+import logo from './assets/logo.png'
 
 function Header() {
   const { theme, toggleTheme } = useTheme();
@@ -17,8 +18,10 @@ function Header() {
       {/* Основной хедер */}
       <div className="header">
         <div className="header-container">
+          <div className="header-left">
+          <img src={logo} alt="svg" className='logo'/>
           <p className="project-name">Flexology</p>
-
+          </div>
           <div className="header-right">
             <button className="login-button" onClick={() => setIsLoginOpen(true)}>
               Войти
