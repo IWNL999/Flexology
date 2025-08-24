@@ -1,13 +1,30 @@
 import './App.css'
+import { useRef } from 'react';
 
 function Preview() {
+  const generateSection = useRef(null);
+
+  const scrollToGenerate = () => {
+    const element = document.getElementById('generate-section');
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'center' 
+      });
+    }
+  };
+
   return (
     <div className="preview">
         <div className="preview-container">
             <div className="preview-left">
                 <h1 className='generate-virus'>Генерируйте  вирусные ВК клипы за минуту</h1> 
                 <h2 className='generate-virus-2'>AI создаст видео из текста - просто редактируйте и загружайте!</h2>
-                <button className='preview-generate'>Начать генерацию</button>
+                <button 
+                  className='preview-generate'
+                  onClick={scrollToGenerate}>
+                  Начать генерацию
+                </button>
             </div> 
         <div className="preview-right">
             <div className="preview-card">
