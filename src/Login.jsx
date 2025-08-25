@@ -1,11 +1,29 @@
 import './App.css';
+import { useState } from 'react';
 
 function Login({ isOpen, onClose, onSwitchToRegister }) {
-  if (!isOpen) return null;
+  const [isExiting, setIsExiting] = useState(false);
+
+  const handleClose = () => {
+    setIsExiting(true);
+    setTimeout(() => {
+      setIsExiting(false);
+      onClose();
+    }, 200);
+  };
+
+ 
+  if (!isOpen && !isExiting) return null;
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal" onClick={(e) => e.stopPropagation()}>
+    <div
+      className="modal-overlay"
+      onClick={handleClose}
+    >
+      <div
+        className={`modal ${isExiting ? 'modal-exit' : 'modal-enter'}`}
+        onClick={(e) => e.stopPropagation()}
+      >
         <form className="form">
           <p className="form-title">Войти в аккаунт</p>
           <div className="input-container">
@@ -20,7 +38,7 @@ function Login({ isOpen, onClose, onSwitchToRegister }) {
             <button
               type="button"
               onClick={onSwitchToRegister}
-             >
+            >
               Создайте
             </button>
           </p>

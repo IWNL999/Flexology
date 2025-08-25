@@ -88,7 +88,6 @@ h1, h2 {
 
 
 
-
 /* === Модальное окно === */
 
 .modal-overlay {
@@ -185,8 +184,39 @@ h1, h2 {
   transition: text-decoration 0.2s ease; 
 }
 
+/* Анимация появления модального окна */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
+/* Анимация исчезновения */
+@keyframes modalFadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
 
+/* Применяется, когда модалка открыта */
+.modal-enter {
+  animation: modalFadeIn 0.2s ease-out forwards;
+}
+
+/* Применяется, когда модалка закрывается */
+.modal-exit {
+  animation: modalFadeOut 0.2s ease-in forwards;
+}
 
 
 
