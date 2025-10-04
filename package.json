@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vkid/sdk": "^2.6.1",
+    "@vkontakte/vk-bridge": "^2.15.9",
+    "@vkontakte/vk-tunnel": "^0.2.9",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
@@ -17,6 +20,7 @@
     "@eslint/js": "^9.30.1",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^5.0.4",
     "@vitejs/plugin-react-swc": "^3.10.2",
     "eslint": "^9.30.1",
     "eslint-plugin-react-hooks": "^5.2.0",
